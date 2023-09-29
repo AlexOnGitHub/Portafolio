@@ -1,0 +1,71 @@
+  .downloadCV-icon {
+    width: 18px;
+    height: 0px;
+    margin-right: 6px;
+    border-bottom: 2px solid rgb(133, 133, 133);
+    border-left: 2px solid rgb(133, 133, 133);
+    border-right: 2px solid rgb(133, 133, 133);
+  }
+  
+  .downloadCV-tooltip {
+    position: absolute;
+    right: -105px;
+    opacity: 0;
+    background-color: rgb(12, 12, 12);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition-duration: .2s;
+    pointer-events: none;
+    letter-spacing: 0.5px;
+  }
+  
+  .downloadCV-tooltip::before {
+    position: absolute;
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: rgb(12, 12, 12);
+    background-size: 1000%;
+    background-position: center;
+    transform: rotate(45deg);
+    left: -5%;
+    transition-duration: .3s;
+  }
+  
+  .about__contact-button:hover .downloadCV-tooltip {
+    opacity: 1;
+    transition-duration: .3s;
+  }
+  
+  .about__contact-button:hover {
+    background-color: rgb(150, 94, 255);
+    transition-duration: .3s;
+  }
+  
+.about__contact-button:hover .downloadCV-icon {
+  border-bottom: 2px solid rgb(235, 235, 235);
+  border-left: 2px solid rgb(235, 235, 235);
+  border-right: 2px solid rgb(235, 235, 235);
+}
+
+.about__contact-button:hover .downloadCv {
+  fill: rgb(255, 255, 255);
+  animation: slide-in-top 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+  
+  @keyframes slide-in-top {
+    0% {
+      transform: translateY(-10px);
+      opacity: 0;
+    }
+  
+    100% {
+      transform: translateY(0px);
+      opacity: 1;
+    }
+  }
+  

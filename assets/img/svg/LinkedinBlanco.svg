@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="47px" height="47px" viewBox="0 -2 40 40" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <path d="M40 0L40 0L40 40L0 40L0 0L40 0Z" id="path_1" />
+    <clipPath id="clip_1">
+      <use xlink:href="#path_1" clip-rule="evenodd" fill-rule="evenodd" />
+    </clipPath>
+  </defs>
+  <g id="Linkedin 2" clip-path="url(#clip_1)">
+    <path d="M40 0L40 0L40 40L0 40L0 0L40 0Z" id="Linkedin-2" fill="none" stroke="none" />
+    <path d="M32.8 3.2L7.2 3.2C4.992 3.2 3.2 4.992 3.2 7.2L3.2 32.8C3.2 35.008 4.992 36.8 7.2 36.8L32.8 36.8C35.008 36.8 36.8 35.008 36.8 32.8L36.8 7.2C36.8 4.992 35.008 3.2 32.8 3.2L32.8 3.2ZM13.6 16L13.6 31.2L8.8 31.2L8.8 16L13.6 16L13.6 16ZM8.8 11.576C8.8 10.456 9.76 9.6 11.2 9.6C12.64 9.6 13.544 10.456 13.6 11.576C13.6 12.696 12.704 13.6 11.2 13.6C9.76 13.6 8.8 12.696 8.8 11.576L8.8 11.576ZM31.2 31.2L26.4 31.2C26.4 31.2 26.4 23.792 26.4 23.2C26.4 21.6 25.6 20 23.6 19.968L23.536 19.968C21.6 19.968 20.8 21.616 20.8 23.2C20.8 23.928 20.8 31.2 20.8 31.2L16 31.2L16 16L20.8 16L20.8 18.048C20.8 18.048 22.344 16 25.448 16C28.624 16 31.2 18.184 31.2 22.608L31.2 31.2L31.2 31.2Z" id="Shape" fill="#FFFFFF" fill-rule="evenodd" stroke="none" />
+  </g>
+</svg>

@@ -1,0 +1,167 @@
+.hobbies{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  gap: 30px;
+  height: 100%;
+  z-index: 10px;
+  clip-path: polygon(0 0,100% 50px,100% 100%,0 100%);
+  margin-top: -45px;
+
+  clip-path: polygon(0 0,calc(50% - 1.11px - 107.23px) 0,50% calc(50px + 0.52px),calc(50% + 1.11px + 107.23px) 0,100% 0,100% 100%,0 100%);
+  margin-top: -45px;
+
+  --top: 
+   linear-gradient(#000 0 0) top/100% calc(100% - 50px) no-repeat,
+   radial-gradient(farthest-side,#000 98%,#0000) bottom/100px 100px no-repeat;
+  -webkit-mask: var(--top);
+          mask: var(--top);
+
+  background-color: var(--background3);
+}
+
+.hobbie__container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.hobbies__title{
+  transition: all 0.9s;
+  text-align: center;
+  font-size: 2.3em;
+  font-weight: 600;
+  font-family: 'Open Sans', sans-serif;
+  margin: 0 0 31px 0;
+  color: var(--headline3);
+  filter: drop-shadow(0 0 6px var(--headline));
+  margin-top: 70px;
+}
+
+.hobbies__title:hover {
+  color: var(--secondary2);
+  filter: drop-shadow(0 0 12px var(--secondary2));
+}
+
+.hobbie__element {
+  width: 150px;
+  height: 184px;
+  transition: all 0.2s;
+  position: relative;
+  cursor: pointer;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.hobbie__box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: inherit;
+  height: inherit;
+  background: rgba(255,255,255,.05);
+  box-shadow: 0 0 10px rgba(0,0,0,0.25);
+  backdrop-filter: blur(10px);
+  border-radius: 8px;
+}
+
+.hobbie__icon{
+  height: 40%;
+  width: 40%;
+  transition: 0.2s ease-in-out;
+  z-index: 1;
+}
+
+.hobbie__text{
+  text-align: justify;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.6;
+  padding: 0 14px;
+}
+
+.hobbie__element:hover {
+  transform: scale(1.04);
+}
+
+.circle {
+  width: 100px;
+  height: 100px;
+  background: radial-gradient(var(--icons-main2)    , var(--tertiary2));
+  border-radius: 50%;
+  position: absolute;
+  animation: move-up6 2s ease-in infinite alternate-reverse;
+}
+
+.circle:nth-child(1) {
+  top: -25px;
+  left: -25px;
+}
+
+.circle:nth-child(2) {
+  bottom: -25px;
+  right: -25px;
+  animation-name: move-down1;
+}
+
+@keyframes move-up6 {
+  to {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes move-down1 {
+  to {
+    transform: translateY(10px);
+  }
+}
+
+@media (min-width:768px){
+  .hobbies{
+    display: flex;
+    justify-content: center;
+    min-height: 768px; 
+    height: 100%;
+    width: 100%;
+  }
+  .hobbie__element {
+    width: 250px;
+    height: 240px;
+  }
+  .hobbie__icon{
+    width: 50%;
+    height: 50%;
+  }
+  .hobbie__text{
+    font-size: 20px;
+  }
+}
+
+@media (min-width:1200px){
+  .hobbies{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 2560px;
+    max-height: 1440px;
+    width: 100%;
+    height: 100%; 
+  }
+  .hobbie__element {
+    width: 230px;
+    height: 264px;
+  }
+  .hobbie__icon{
+    width: 60%;
+    height: 60%;
+  }
+  .hobbie__text{
+    font-size: 20px;
+  }
+}

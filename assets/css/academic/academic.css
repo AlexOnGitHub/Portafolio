@@ -1,0 +1,125 @@
+.academic{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  gap: 30px;
+  height: 100%;
+  z-index: 10px;
+
+  --bottom: radial-gradient(calc(5px + 50px) at 50% -5px,#0000 98%,#000);
+    -webkit-mask: var(--bottom);
+            mask: var(--bottom);
+    margin-top: -45px;
+
+   clip-path: polygon(0 0,100% 0,100% calc(100% - 50px),calc(50% + 50.00px) calc(100% - 50px),50% 100%,calc(50% - 50.00px) calc(100% - 50px),0 calc(100% - 50px));
+  background-color: var(--background2);
+}
+
+.academic__header{
+  transition: all 0.9s;
+  text-align: center;
+  font-size: 3em;
+  font-weight: 600;
+  font-family: 'Open Sans', sans-serif;
+  margin: 0 0 31px 0;
+  color: var(--headline2);
+  filter: drop-shadow(0 0 6px var(--icons-main2));
+  margin-top: 70px;
+}
+
+.academic__header:hover {
+  color: var(--blue);
+  filter: drop-shadow(0 0 12px var(--blue));
+}
+
+.academic__container{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-bottom: 70px;
+}
+
+.academic__box {
+  padding: 20px;
+  width: 330px;
+  min-height: 370px;
+  border-radius: 20px;
+  background: #212121;
+  box-shadow: 5px 5px 8px #1b1b1b,
+             -5px -5px 8px #272727;
+  transition: 0.4s;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+  
+.academic__box:hover {
+  translate: 0 -10px;
+}
+  
+.academic__title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #b2eccf;
+  margin: 15px 0 0 10px;
+}
+  
+.academic__image {
+  min-height: 170px;
+  max-height: 170px;
+  background-color: #313131;
+  border-radius: 15px;
+  overflow: hidden;
+  background: #313131;
+  box-shadow: inset 5px 5px 3px #2f2f2f,
+            inset -5px -5px 3px #333333;
+}
+
+.academic__image-element{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+}
+  
+.academic__body {
+  margin: 13px 0 0 10px;
+  color: rgb(184, 184, 184);
+  font-size: 15px;
+}
+  
+.academic__footer {
+  float: right;
+  margin: 28px 0 0 18px;
+  font-size: 11px;
+  color: #b3b3b3;
+}
+  
+.academic__by-name {
+  font-weight: 700;
+}
+
+@media (min-width:768px){
+  .academic{
+    display: flex;
+    justify-content: center;
+    min-height: 768px; 
+    height: 100%;
+    width: 100%;
+  }
+}
+
+@media (min-width:1200px){
+  .academic{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 2560px;
+    max-height: 1440px;
+    width: 100%;
+    height: 100%;  
+  }
+}
